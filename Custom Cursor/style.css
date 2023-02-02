@@ -2,6 +2,11 @@
   padding: o;
   margin: 0;
   box-sizing: border-box;
+  cursor: none;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 section {
@@ -18,19 +23,20 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  border: 1.5px solid white;
+  /* border: 1.5px solid white; */
   width: 30px;
   height: 30px;
   border-radius: 50px;
   transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 .cursor::after,
 .cursor::before {
   content: "";
   position: absolute;
-  width: 5px;
-  height: 5px;
+  width: 10px;
+  height: 10px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -44,7 +50,7 @@ section {
 }
 
 .cursor.click::before {
-  animation: click 1s ease-in-out;
+  animation: click 0.5s ease-in-out;
 }
 
 @keyframes click {
