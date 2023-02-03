@@ -13,10 +13,10 @@ body[data-theme="light"] {
 
 /* Dark theme colors */
 body[data-theme="dark"] {
-  --color-1: #1d2d50;
-  --color-2: #133b5c;
-  --color-3: #1e5f74;
-  --color-4: #fcdab7;
+  --color-1: #17223b;
+  --color-2: #263859;
+  --color-3: #6b778d;
+  --color-4: #f0dbdb;
 }
 body {
   font-family: "Montserrat", sans-serif;
@@ -80,6 +80,8 @@ label {
   background-color: var(--color-2);
   border-radius: 50px;
   position: relative;
+  cursor: pointer;
+  transition: 0.5s ease background-color;
 }
 label::after {
   position: absolute;
@@ -91,4 +93,13 @@ label::after {
   top: 50%;
   left: 5px;
   transform: translateY(-50%);
+  transition: 0.5s ease;
+}
+input:checked + label {
+  background-color: #a7727d;
+  border: 2px solid whitesmoke;
+}
+input:checked + label::after {
+  background-color: #eddbc7;
+  left: calc(100% - 25px);
 }
