@@ -61,3 +61,34 @@ button {
   margin-top: 20px;
   cursor: pointer;
 }
+
+.theme-switcher {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+label {
+  display: block;
+  text-indent: -9999px;
+  height: 30px;
+  width: 60px;
+  background-color: var(--color-2);
+  border-radius: 50px;
+  position: relative;
+}
+label::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background-color: var(--color-4);
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+}
