@@ -9,7 +9,7 @@ html {
 }
 body {
   background-color: #525252;
-  color: wheat;
+  color: white;
 }
 section {
   min-height: 100vh;
@@ -19,13 +19,20 @@ section {
   align-items: center;
   justify-content: center;
 }
+.title {
+  position: absolute;
+  top: 50px;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
 .container {
   width: 90%;
   max-width: 500px;
   max-width: 0 auto;
   background-color: #414141;
   border-radius: 8px;
-  pad: 3rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
 }
@@ -36,9 +43,10 @@ section {
   text-align: justify;
 }
 button {
-  margin-top: 4rem;
+  margin-top: 40px;
   width: fit-content;
-  pad: 2rem;
+  padding: 2rem;
+  font-size: 2rem;
   background-color: #313131;
   color: white;
   border: none;
