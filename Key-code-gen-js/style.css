@@ -61,7 +61,17 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 30px;
 }
 .overlay.hide {
   display: none;
+}
+@media only screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+  .arrow {
+    padding: 30px 0 !important;
+    transform: rotate(90deg);
+  }
 }

@@ -24,5 +24,5 @@ keyCodeDiv.addEventListener("click", (e) => {
   keyCodeDiv.querySelector("p").innerText = "Copied";
   setTimeout(() => {
     keyCodeDiv.querySelector("p").innerText = "Click to copy";
-  }, 2000);
+  }, 1000);
 });
