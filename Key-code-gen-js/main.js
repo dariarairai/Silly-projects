@@ -11,3 +11,18 @@ window.addEventListener("keydown", (e) => {
     displayKey.innerHTML = `'space'`;
   }
 });
+
+keyCodeDiv.addEventListener("click", (e) => {
+  const textArea = document.createElement("textarea");
+  textArea.setAttribute("readonly", "");
+  textArea.style.position = "absolute";
+  textArea.value = keyCodeDiv.querySelector("h2").innerText;
+  document.body.appendChild(textArea);
+  textArea.select();
+  document.execCommand("copy");
+  document.body.removeChild(textArea);
+  keyCodeDiv.querySelector("p").innerText = "Copied";
+  setTimeout(() => {
+    keyCodeDiv.querySelector("p").innerText = "Click to copy";
+  }, 2000);
+});
