@@ -1,0 +1,23 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #4d455d;
+  color: #7db9b6;
+}
+.text {
+  font-size: 24px;
+}
+.more__text {
+  display: none;
+}
+.read-more-btn {
+  padding: 15px 60px;
+  background-color: #f5e9cf;
+  color: #4d455d;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+}
