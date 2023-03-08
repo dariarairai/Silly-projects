@@ -24,3 +24,6 @@ body {
 .text.show-more .more__text {
   display: inline;
 }
+.text.show-more .dots {
+  display: none;
+}
