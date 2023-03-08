@@ -21,3 +21,6 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
+.text.show-more .more__text {
+  display: inline;
+}
